@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/image_view_card"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@android:drawable/ic_media_ff"
+            tools:src="@android:drawable/ic_media_ff"></ImageButton>
+
+        <TextView
+            android:id="@+id/id_textCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/image_view_card"
+            android:layout_toRightOf="@+id/image_view_card"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_textCategory"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_view_card"
+            android:layout_toRightOf="@id/image_view_card"
+            android:text="Presione ell botón izquierdo para ver la categorias" />
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>
